@@ -44,8 +44,8 @@ def generate_heatmap_pdf_file(name):
     plt.figure(figsize=(15, 10))
 
     # Generate the heatmap using Seaborn
-    colormap = sns.color_palette("Blues")
-    sns.heatmap(df, cmap=colormap)
+    # colormap = sns.color_palette("Blues")
+    sns.heatmap(df, cmap='YlOrRd')
 
     # # Add labels and title
     plt.title('Keyword counts per publisher')
